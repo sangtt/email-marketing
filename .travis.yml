@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "0.12"
+
+env:
+  global:
+    - COVERALLS_REPO_TOKEN: BtMzrlEAH9VVpvorRtDwixrqXNCLUTS1D
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm --version
+  - npm install --global gulp-cli
+  - gulp --version
+
+install:
+  - npm install
+
+script:
+  - gulp lint
+  - gulp test
+  - gulp coveralls
+
