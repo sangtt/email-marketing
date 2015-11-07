@@ -16,7 +16,11 @@
     "lint": "gulp lint",
     "coveralls": "gulp coveralls"
   },
-  "dependencies": {},
+  "dependencies": {
+    "email-templates": "^2.0.1",
+    "handlebars": "^4.0.4",
+    "nodemailer": "^1.8.0"
+  },
   "devDependencies": {
     "del": "^2.0.2",
     "gulp": "^3.9.0",
